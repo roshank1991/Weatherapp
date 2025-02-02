@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchSky" translatesAutoresizingMaskIntoConstraints="NO" id="d08-TH-Uo3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weatherlaunch" translatesAutoresizingMaskIntoConstraints="NO" id="JdW-XU-Omp">
+                                <rect key="frame" x="129" y="292" width="156" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="D6J-B6-1Vs"/>
+                                    <constraint firstAttribute="height" constant="130" id="oz3-gI-fCE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzM-ux-Fmb">
+                                <rect key="frame" x="119" y="430" width="176" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JdW-XU-Omp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BEg-aY-1dz"/>
+                            <constraint firstItem="UzM-ux-Fmb" firstAttribute="top" secondItem="JdW-XU-Omp" secondAttribute="bottom" constant="8" symbolic="YES" id="DTz-lm-m4J"/>
+                            <constraint firstAttribute="bottom" secondItem="d08-TH-Uo3" secondAttribute="bottom" id="FJV-V5-wiv"/>
+                            <constraint firstItem="d08-TH-Uo3" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="bx6-rk-9hB"/>
+                            <constraint firstItem="UzM-ux-Fmb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gKI-gf-VKv"/>
+                            <constraint firstItem="d08-TH-Uo3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ggb-Nv-qgb"/>
+                            <constraint firstItem="UzM-ux-Fmb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lim-hG-Elw"/>
+                            <constraint firstItem="d08-TH-Uo3" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="sIP-48-xVy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368.11594202898556" y="379.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchSky" width="800" height="1422"/>
+        <image name="weatherlaunch" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
